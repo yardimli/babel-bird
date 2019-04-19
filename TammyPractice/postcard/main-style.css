@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Slabo+27px');
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #ccc;
+}
+
+a:hover {
+    text-decoration: underline !important;
+}
+
+h2 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    font-weight: normal;
+    color: #757575;
+}
+
+h2 span {
+    top: -7px;
+    position: relative;
+    left: -3px;
+}
+
+h2 span i {
+    font-size: 13px;
+}
+
+output img, #logo img {
+    background: none;
+}
+
+fieldset {
+    border: 1px solid #666;
+    border-radius: 3px;
+}
+
+fieldset div {
+    padding: 5px;
+}
+
+fieldset legend {
+    padding: 0 10px;
+    font-size: 13px;
+    text-align: left;
+    margin-bottom: 10px;
+    background-color: white;
+    color: #2196f3;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 3px;
+}
+
+input, textarea {
+    border: 2px solid transparent;
+    border-bottom: 1px solid #666;
+    font-size: 15px;
+    padding: 3px;
+    width: 250px;
+    resize: none;
+    border-radius: 3px;
+
+}
+
+input:focus, textarea:focus {
+    background: lightyellow;
+    border: 0;
+    border-bottom: 1px solid #4D90FE;
+    box-shadow: none;
+    outline: none;
+}
+
+input.contador {
+    width: 22px;
+    text-align: center;
+    color: green;
+    border: none;
+    font-size: 12px !important;
+}
+
+
+button, .downloadBtn {
+    background: #4D90FE;
+    color: #fff;
+    padding: 8px 15px;
+    border: 0;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.resetBtn {
+    background: red;
+    margin-left: 10px;
+}
+
+.previewBtn {
+    background: green;
+}
+
+/*can not be deleted*/
+#form {
+    position: absolute;
+    right:10px;
+    top:10px;
+    margin-bottom: 0px;
+    display: inline-block;
+    background: #fff;
+    padding: 20px 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    width: 350px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /*opacity: 0.6;*/
+    margin-top: 50px;
+
+}
+/*can not be deleted*/
+
+
+.btn {
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    margin: 20px 2px 0 2px;
+    background: darkorange;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+#exemplosRender {
+    z-index: 0;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    height: -webkit-fill-available;
+    background-color: #049cdb;
+}
+
+/*CSS for postcard background*/
+
+body {
+    overflow:hidden;
+}
+
+.postcard_background {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-image: url("acorns-bow-candle-259890.jpg");
+    background-position: 30% 0;
+    background-color: #38C5DA;
+}
+
+
+/* CSS for index preview info  */
+
+
+h1{
+    display: inline-block;
+    color: #6FA8DC;
+    font-family: "Comic Sans MS ", cursive, sans-serif;
+    padding: 1.5% 25%;
+    font-size: xx-large;
+
+}
+
+.consignee {
+    font-family: "Lucida Console", Monaco, monospace;
+    display: inline-block;
+    color:white;
+    max-width: 300px;
+    position: absolute;
+    left:10%;
+    top: 40%;
+
+}
+
+
+.address {
+    font-family: "Lucida Console", Monaco, monospace;
+    position: absolute;
+    color:white;
+    left: 10%;
+    top: 50%;
+    display: inline-block;
+    max-width: 600px;
+
+}
+
+
+.content {
+    color: white;
+    font-family: "Lucida Console", Monaco, monospace;
+    position: absolute;
+    left: 10%;
+    top: 60%;
+    display: inline-block;
+    max-width: 700px;
+    font-style: italic;
+
+}
+
+.from {
+    font-family: "Lucida Console", Monaco, monospace;
+    position: absolute;
+    left:10%;
+    top: 70%;
+    display: inline-block;
+    max-width: 300px;
+    color: white;
+
+
+}
+
+
+/*CSS for the photo dropdown*/
+.photoList {
+    display: none;
+}
+
+#photoListContainer {
+    /*padding: 5px;*/
+    width: 256px;
+    color: grey;
+}
+
+.fa-caret-down:before {
+    position: absolute;
+    left: 250px;
+    top: auto;
+    font-size: x-large;
+    padding-top: 2px;
+}
+
+
+#photomenu {
+    background-color: rgba(125,226,255,1);
+    color: dimgrey;
+    border: 2px solid rgba(125,226,255,1);
+    border-radius: 3px;
+}
+
+#photoListContainer #photoList .submenu:hover {
+    background-color: rgba(0,200,255,1);;
+    cursor: pointer;
+}
+
+#photoList {
+    background-color: rgba(125,226,255,0.5);
+    margin: 0px;
+    height: 200px;
+    overflow: auto;
+    color: dimgray;
+}
+
+#photoListContainer #photoList .submenu {
+    margin-bottom: 10px;
+    padding: 5px;
+}

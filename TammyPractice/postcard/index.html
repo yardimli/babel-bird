@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="main-style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="main-javascript.js"></script>
+
+
+</head>
+
+
+<div id="postcard" class="postcard_background">
+
+        <h1 id="indexHeader">Customize Your Postcard </h1>
+
+        <div class="consignee">
+            To:
+        </div>
+
+        <div class="address">
+            Address:
+        </div>
+
+        <div class="content">
+            What do you want to say?
+        </div>
+
+        <div class="from">
+            From
+        </div>
+
+</div>
+
+
+<div id="form">
+
+    <fieldset>
+        <legend>Fill the fields below</legend>
+
+        <div>
+            <input id="consignee" name="consignee" placeholder="Name of consignee" type="text" value="">
+        </div>
+
+        <div>
+            <textarea id="address" name="address" placeholder="Address of consignee" type="text" rows="3"></textarea>
+        </div>
+
+        <div><textarea id="content" name="content" placeholder="What do you want to say?" type="text"
+                       rows="3"></textarea>
+        </div>
+
+        <div>
+            <input id="from" name="from" placeholder="From" type="text" value="">
+        </div>
+
+        <div id="photoListContainer" class="dropdown-container fa fa-caret-down">
+            <div id="photomenu">Choose the photo you like</div>
+            <ul id="photoList" class="photoList">
+            </ul>
+        </div>
+
+
+        <output id="list"></output>
+
+        <div>
+            <button class="previewBtn">
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                <a href="index.html" target="_blank"></a>
+                Preview
+            </button>
+            <button class="resetBtn"><i class="fa fa-refresh" aria-hidden="true"></i> Reset </button>
+        </div>
+
+        <a id="download"></a>
+
+    </fieldset>
+
+
+</div>
+
+
+</html>

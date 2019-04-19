@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+<div id="photoListContainer" class="dropdown-container">
+    <span id="menu">Choose the photo you like</span>
+    <ul id="photoList" class="photoList">
+        <li class="submenu">Photo1</li>
+        <li class="submenu">Photo2</li>
+        <li class="submenu">Photo3</li>
+        <li class="submenu">Photo4</li>
+        <li class="submenu">Photo5</li>
+    </ul>
+</div>
+
+<!--CSS Styles-->
+<style>
+    .not_active {
+        display: none;
+    }
+</style>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        $('#photoListContainer').on('click', function (event) {
+            $("#photoList").toggleClass('not_active');
+            return false;
+        });
+
+        $(".submenu").on('click', function () {
+            $("#menu").text( $(this).text() );
+        });
+
+
+
+        $(document).click(function () {
+            $("#photoList").addClass('not_active');
+        });
+
+    });
+
+
+</script>
+
+</body>
+</html>
