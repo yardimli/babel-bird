@@ -7,9 +7,9 @@
  */
 
 $mysql = new mysqli
-('phishproof-mysql',
+('babel_bird_ssl_mysql',
     'root',
-    'mysql123',
+    'A123456b',
     'todo')
 or die('problem');
 

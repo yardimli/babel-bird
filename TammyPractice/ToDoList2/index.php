@@ -6,7 +6,7 @@
 <!-- */-->
 <?php
 
-$mysqlDB = mysqli_connect("phishproof-mysql", "root", "mysql123", "todo");
+$mysqlDB = mysqli_connect("babel_bird_ssl_mysql", "root", "A123456b", "todo");
 
 //$mysqlDB = new mysqli ("phishproof-mysql", "root", "mysql123", "todo");
 

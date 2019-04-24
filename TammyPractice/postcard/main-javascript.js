@@ -387,9 +387,9 @@ $(document).ready(function () {
 
 //for the photo selecg dropdwon list to be hidden (the class photolist has a display:none;
     //for hiding the list-
-    $(document).click(,function () {
-        $("#photoList").addClass('photoList');
-    });//
+    // $(document).click(,function () {
+    //     $("#photoList").addClass('photoList');
+    // });//
 
     // for hiding the form
     $("#form").on('mouseenter', function () {
@@ -440,7 +440,7 @@ $(document).ready(function () {
 
 
 
-        var win = window.open("https://local.elosoft.tw/Postcard/preview.html?from=" + from +
+        var win = window.open("https://polylinguas.com/postcard/preview.html?from=" + from +
             "&consignee=" + consignee +
             "&address=" + address +
             "&content=" + content +
